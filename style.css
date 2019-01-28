@@ -74,9 +74,11 @@
 .sticky-nav{
   height: 80px;
   background-color: #f5f8fa;
-  position: sticky;
+  z-index: 2;
   padding: 20px 100px;
   line-height: 40px;
+  position: sticky;
+  top: 0;
 }
 
 /* Clearfix di stickynav */
@@ -145,14 +147,60 @@
 
 /* Main 1, Hubspot Free */
 .hubspot-free{
-  background-color: #009fba;
+  height: 450px;
+  background-image: linear-gradient(to top right, #425b76, #0091b0, #00a4bd, #7fd1de);
+  color: white;
+  padding: 30px 100px;
+}
 
+.free-text{
+  max-width: 400px;
+}
+
+.free-text h1{
+  font-size: 3.5rem;
+}
+
+.free-text p{
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.get-hubspot{
+  width: 60%;
+  color: black;
+  padding: 30px 50px;
+  margin: 15px 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+.lesser-freetext{
+  max-width: 250px;
 }
 
 /* Div che accentra tutto */
-.content{
-  width: 80vw;
+.container{
+  width: 1000px;
   margin: auto;
+}
+
+.hubspot-cube{
+  height: 300px;
+  position: relative;
+  padding:100px;
+}
+
+.hubspot-cube img{
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /* Nav-bar */
