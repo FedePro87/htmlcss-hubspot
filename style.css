@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-/* Clearfix */
-.nav1:after,.nav1-leftside{
+/* Clearfix di nav1*/
+.nav1:after,.nav1-leftside:after{
   content: "";
   display: table;
   clear: both;
@@ -18,10 +18,10 @@
   background-color: #33475b;
   color: white;
   line-height: 60px;
+  padding: 0 50px;
 }
 
 .nav1-img{
-  float: left;
   width: 60px;
   height: 60px;
   position: relative;
@@ -34,13 +34,6 @@
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.account-img{
-  float: right;
-  width: 60px;
-  height: 60px;
-  position: relative;
 }
 
 .account-img img{
@@ -58,20 +51,102 @@
   position: relative;
 }
 
-.nav1-leftside .nav1-item{
+.nav1-rightside img{
+  border-radius: 100%;
+}
+
+#special-nav1 {
+  float: right;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+/* Float di tutti gli elementi rispettivamente di left e right */
+.nav1-leftside,.nav1-leftside .nav1-img,.nav1-leftside .nav1-item{
   float: left;
 }
 
-.nav1-rightside .nav1-item{
+.nav1-rightside,.nav1-rightside .nav1-img,.nav1-rightside .nav1-item{
   float: right;
 }
 
-.nav1-leftside{
+/* Sticky nav-bar */
+.sticky-nav{
+  height: 80px;
+  background-color: #f5f8fa;
+  position: sticky;
+  padding: 20px 100px;
+  line-height: 40px;
+}
+
+/* Clearfix di stickynav */
+.stickynav-left:after,.stickynav-right:after,.sticky-nav:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#language-border{
+  float: left;
+  padding: 0 15px;
+  border-right: 2px solid #cbd6e2;
+}
+
+.stickynav-right i{
+  color: #01a4bd;
+  margin-right: 15px;
+}
+
+.navitem-bordered {
+  float: right;
+  background-color: #ff7a59;
+  border-radius: 5%;
+  color: white;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.stickynav-left .nav1-item {
   float: left;
 }
 
-.nav1-rightside{
+.stickynav-right .nav1-item{
   float: right;
+}
+
+.stickynav-left{
+  float: left;
+}
+
+.stickynav-right{
+  float: right;
+}
+
+/* Terza nav Hubspot */
+.nav-hubspot{
+  height: 80px;
+  padding: 20px 100px;
+}
+
+.navhubspot-left, .navhubspot-left .nav1-item{
+  float: left;
+}
+
+.navhubspot-right, .navhubspot-right .nav1-item{
+  float: right;
+}
+
+/* Clearfix terza nav */
+.navhubspot-left:after,.nav-hubspot:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main 1, Hubspot Free */
+.hubspot-free{
+  background-color: #009fba;
+
 }
 
 /* Div che accentra tutto */
