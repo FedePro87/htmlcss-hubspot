@@ -147,8 +147,9 @@
 
 /* Main 1, Hubspot Free */
 .hubspot-free{
-  height: 450px;
-  background-image: linear-gradient(to top right, #425b76, #0091b0, #00a4bd, #7fd1de);
+  height: 600px;
+  background-image: url("img/hero1.png");
+  /* background-size: cover; */
   color: white;
   padding: 30px 100px;
 }
@@ -159,6 +160,7 @@
 
 .free-text h1{
   font-size: 3.5rem;
+  margin-top: 50px;
 }
 
 .free-text p{
@@ -191,7 +193,7 @@
 
 /* Main 2, HubSpot cube */
 .hubspot-cube{
-  height: 400px;
+  height: 450px;
   padding:40px;
   text-align: center;
   background-color: #f5f8fa;
@@ -237,6 +239,7 @@
 .learnmore-center p{
   padding: 15px;
   color: white;
+  cursor: pointer;
   background-color: #ff7a59;
   border-radius: 10px;
 }
@@ -320,6 +323,7 @@
 }
 
 #special-threerow{
+  float: left;
   margin-right: 0;
 }
 
@@ -346,7 +350,7 @@
   padding: 0px 80px;
 }
 /* Clearfix threerows-main4 */
-.threerows-main4:after{
+.threerows-container:after{
   content: "";
   display: table;
   clear: both;
@@ -471,7 +475,7 @@
 }
 /* Ultimo main, Growing */
 .growing{
-  height: 300px;
+  height: 500px;
 }
 
 .growing-left{
@@ -543,7 +547,86 @@
 }
 /* Footer */
 /* Footer fourrows */
+footer{
+  background-color: #33475b;
+  color: white;
+}
+
 .footer-fourrows{
   height: 400px;
-  background-color: 
+  padding-top: 80px;
+}
+
+.fourrows{
+  float: left;
+  width: 25%;
+}
+
+.fourrows h3{
+  font-weight: bold;
+}
+
+.fourrows p{
+  margin: 15px 0;
+}
+
+.hubspot-support{
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25;
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  padding: 8px 16px;
+  background-color: white;
+}
+
+.footer-social i{
+  margin-right: 20px;
+}
+/* Footer Languages */
+.footer-languages{
+  height: 60px;
+  font-size: 1.3rem;
+  margin-top: 40px;
+}
+
+.small-container{
+  width: 600px;
+  margin:auto;
+}
+
+.languages-block{
+  float: left;
+  width: 16.66%;
+}
+
+/* Footer end */
+.footer-end{
+  padding: 30px 0;
+}
+
+.footer-end img{
+  margin-bottom: 15px;
+}
+
+.endfooter-left{
+  float: left;
+}
+
+.endfooter-right{
+  float: right;
+}
+
+.endfootertext-right{
+  float: right;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* Clearfix footer */
+.fourrows-container:after,.languages-container:after,.endfooter-container:after,.endfooter-right:after{
+  content: "";
+  display: table;
+  clear: both;
 }
