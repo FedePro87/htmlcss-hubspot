@@ -654,7 +654,7 @@ footer{
   clear: both;
 }
 
-.help{
+.fixed-circle{
   height: 61px;
   width: 61px;
   border-radius: 100px;
@@ -667,7 +667,7 @@ footer{
   color: white;
 }
 
-.help img{
+.fixed-circle img{
   width: 55%;
   position: absolute;
   top: 50%;
