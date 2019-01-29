@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Clearfix di nav1*/
-.nav1:after,.nav1-leftside:after{
+.nav1:after,.nav1-leftside:after,.nav1-rightside:after,.account-nav1:after{
   content: "";
   display: table;
   clear: both;
@@ -18,7 +19,12 @@
   background-color: #33475b;
   color: white;
   line-height: 60px;
-  padding: 0 50px;
+  padding: 0 40px;
+  font-size: 12px;
+}
+
+.nav1-rightside *{
+  font-size: 15px;
 }
 
 .nav1-img{
@@ -46,18 +52,31 @@
 }
 
 .nav-item{
+  float: left;
   cursor: pointer;
-  padding: 0 15px;
+  padding: 0 20px;
   position: relative;
+}
+
+.account-nav1{
+  float: right;
+  cursor: pointer;
+}
+
+.nav1 .nav-item:hover,.nav1 .nav1-img:hover,.nav1 .account-nav1:hover{
+  background-color: #23313C;
+}
+
+.nav1 img{
+  cursor: pointer;
 }
 
 .nav1-rightside img{
   border-radius: 100%;
 }
 
-#special-nav1 {
+.special-nav1 {
   float: right;
-  cursor: pointer;
   padding-right: 5px;
 }
 
@@ -92,6 +111,7 @@
   float: left;
   padding: 0 15px;
   border-right: 2px solid #cbd6e2;
+  cursor: pointer;
 }
 
 .stickynav-right i{
@@ -127,10 +147,12 @@
 /* Terza nav Hubspot */
 .nav-hubspot{
   height: 80px;
-  padding: 20px 100px;
+  padding: 0px 100px;
+  line-height: 80px;
 }
 
 .navhubspot-left, .navhubspot-left .nav-item{
+  margin-top: 5px;
   float: left;
 }
 
@@ -166,19 +188,19 @@
 .free-text p{
   font-size: 1.1rem;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  max-width: 350px;
 }
 
 .get-hubspot{
   width: 60%;
   color: black;
-  padding: 30px 50px;
+  padding: 20px 50px;
   margin: 15px 0;
   border: 0;
   border-radius: 10px;
   cursor: pointer;
   background-color: white;
-  font-size: 1.2rem;
 }
 
 .lesser-freetext{
@@ -412,6 +434,7 @@
   position: absolute;
   font-size: 1rem;
   top:25%;
+  margin-left: 5px;
 }
 
 #special-gridrow{
@@ -629,4 +652,25 @@ footer{
   content: "";
   display: table;
   clear: both;
+}
+
+.help{
+  height: 61px;
+  width: 61px;
+  border-radius: 100px;
+  position: fixed;
+  background-color: #2e3f50;
+  bottom: 15px;
+  right: 15px;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.help img{
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
