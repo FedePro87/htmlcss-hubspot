@@ -305,7 +305,7 @@
 }
 /* Main 4, tre elementi */
 .threerows-main4{
-  height: 550px;
+  height: 600px;
   background-color: #f5f8fa;
 }
 
@@ -342,10 +342,79 @@
 }
 
 .three-row .learnmore-center{
-  padding: 30px 80px;
+  margin-top: 20px;
+  padding: 0px 80px;
 }
 /* Clearfix threerows-main4 */
 .threerows-main4:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Testo prima della griglia */
+.text-grid{
+  height: 300px;
+  background-color: #00aeb4;
+  text-align: center;
+  padding: 100px 300px;
+  color: white;
+}
+
+.text-grid h2{
+  font-size: 2rem;
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+.text-grid p{
+  font-size: 18px;
+  max-width: 800px;
+}
+/* Grid */
+.grid{
+  height: 500px;
+  background-color: #00aeb4;
+  color: white;
+}
+
+.grid-row{
+  float: left;
+  width: 25%;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-up .grid-row{
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.grid-down .grid-row{
+  border-right: 1px solid #fff;
+}
+
+.grid-row h2{
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.grid-row h2{
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.little-plus{
+  position: absolute;
+  font-size: 1rem;
+  top:25%;
+}
+
+#special-gridrow{
+  border-right: 0;
+}
+/* Clearfix della grid */
+.grid-up:after{
   content: "";
   display: table;
   clear: both;
