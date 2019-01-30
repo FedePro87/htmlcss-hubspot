@@ -1,3 +1,5 @@
+@import url("https://static2cdn.hubspot.com/hubspot.com/static-1.4200/_hsg-ss/build/icons/hsg-icons.css");
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -599,7 +601,7 @@
 /* Footer fourrows */
 footer{
   background-color: #33475b;
-  color: white;
+  color: #cbd6e2;
 }
 
 .footer-fourrows{
@@ -647,6 +649,10 @@ footer p:hover,.fourrows i:hover{
 .footer-social i{
   margin-right: 20px;
 }
+
+.footer-social{
+  margin-top: 10px;
+}
 /* Footer Languages */
 .footer-languages{
   height: 60px;
@@ -677,8 +683,8 @@ footer p:hover,.fourrows i:hover{
   cursor: default;
 }
 
-#copyright{
-  color: white;
+#copyright:hover{
+  color: #cbd6e2;
 }
 
 .endfooter-left{
