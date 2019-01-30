@@ -128,6 +128,10 @@
   cursor: pointer;
 }
 
+.navitem-bordered:hover {
+  background-color: #ff8f73;
+}
+
 .stickynav-left .nav-item {
   float: left;
 }
@@ -205,6 +209,11 @@
   background-color: white;
 }
 
+.get-hubspot:hover{
+  background-color: rgba(255,255,255,0.9);
+  transition: 0.5s color ease-out, 0.5s background-color ease-out, 0.5s border-color ease-out;
+}
+
 .lesser-freetext{
   max-width: 250px;
 }
@@ -238,11 +247,17 @@
 
 /* Main 3, Free HubSpot CRM */
 .hubspot-main3{
-  height: 300px;
   background-color: #f5f8fa;
 }
 
+.hubspot-crm:hover{
+  transform: scale(1.014);
+  box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+  transition: 0.3s ease-in-out;
+}
+
 .hubspot-crm{
+  height: 300px;
   padding: 30px;
   background-color: white;
 }
@@ -258,6 +273,10 @@
 
 .learnmore-center{
   padding: 30px 60px;
+}
+
+.learnmore-center p:hover{
+  background-color: #ff8f73;
 }
 
 .learnmore-center p{
@@ -344,6 +363,12 @@
   margin: 30px 0;
   padding: 20px 10px;
   margin-right: 3%;
+}
+
+.three-row:hover{
+  transform: scale(1.014);
+  box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+  transition: 0.3s ease-in-out;
 }
 
 #special-threerow{
@@ -591,8 +616,21 @@ footer{
   font-weight: bold;
 }
 
-.fourrows p{
+footer p{
+  cursor: pointer;
   margin: 15px 0;
+}
+
+.fourrows span{
+  margin: 15px 0;
+}
+
+.fourrows i{
+  cursor: pointer;
+}
+
+footer p:hover,.fourrows i:hover{
+  color: #5DBCD2;
 }
 
 .hubspot-support{
@@ -633,6 +671,14 @@ footer{
 
 .footer-end img{
   margin-bottom: 15px;
+}
+
+#copyright{
+  cursor: default;
+}
+
+#copyright{
+  color: white;
 }
 
 .endfooter-left{
