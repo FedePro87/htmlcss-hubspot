@@ -169,15 +169,17 @@
 
 /* Main 1, Hubspot Free */
 .hubspot-free{
-  height: 600px;
+  height: 800px;
   background-image: url("img/hero1.png");
-  /* background-size: cover; */
   color: white;
   padding: 30px 100px;
+  background-origin: padding-box;
+  background-size: 1366px 800px;
+
 }
 
 .free-text{
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .free-text h1{
@@ -189,13 +191,13 @@
   font-size: 1.1rem;
   margin-top: 15px;
   margin-bottom: 20px;
-  max-width: 350px;
 }
 
 .get-hubspot{
-  width: 60%;
+  width: 50%;
   color: black;
-  padding: 20px 50px;
+  text-align: center;
+  padding: 30px 50px;
   margin: 15px 0;
   border: 0;
   border-radius: 10px;
